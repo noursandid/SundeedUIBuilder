@@ -14,6 +14,9 @@
 		069DC61824A1FC7D0012B19C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 069DC61724A1FC7D0012B19C /* Assets.xcassets */; };
 		069DC61B24A1FC7D0012B19C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 069DC61924A1FC7D0012B19C /* LaunchScreen.storyboard */; };
 		069DC62624A1FC7E0012B19C /* SundeedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069DC62524A1FC7E0012B19C /* SundeedUITests.swift */; };
+		069DC63824A245BA0012B19C /* SundeedUIBuilder + General.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069DC63724A245BA0012B19C /* SundeedUIBuilder + General.swift */; };
+		069DC63A24A246290012B19C /* SundeedUIBuilder + Horizontal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069DC63924A246290012B19C /* SundeedUIBuilder + Horizontal.swift */; };
+		069DC63C24A246470012B19C /* SundeedUIBuilder + Vertical.swift in Sources */ = {isa = PBXBuildFile; fileRef = 069DC63B24A246470012B19C /* SundeedUIBuilder + Vertical.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,7 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		069DC60B24A1FC7A0012B19C /* SundeedUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SundeedUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		069DC60B24A1FC7A0012B19C /* SundeedUIBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SundeedUIBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		069DC60E24A1FC7A0012B19C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		069DC61024A1FC7A0012B19C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		069DC61224A1FC7A0012B19C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,9 +38,12 @@
 		069DC61724A1FC7D0012B19C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		069DC61A24A1FC7D0012B19C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		069DC61C24A1FC7D0012B19C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		069DC62124A1FC7E0012B19C /* SundeedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SundeedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		069DC62124A1FC7E0012B19C /* SundeedUIBuilderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SundeedUIBuilderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		069DC62524A1FC7E0012B19C /* SundeedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SundeedUITests.swift; sourceTree = "<group>"; };
 		069DC62724A1FC7E0012B19C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		069DC63724A245BA0012B19C /* SundeedUIBuilder + General.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SundeedUIBuilder + General.swift"; sourceTree = "<group>"; };
+		069DC63924A246290012B19C /* SundeedUIBuilder + Horizontal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SundeedUIBuilder + Horizontal.swift"; sourceTree = "<group>"; };
+		069DC63B24A246470012B19C /* SundeedUIBuilder + Vertical.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SundeedUIBuilder + Vertical.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +67,8 @@
 		069DC60224A1FC7A0012B19C = {
 			isa = PBXGroup;
 			children = (
-				069DC60D24A1FC7A0012B19C /* SundeedUI */,
+				069DC63024A1FC8C0012B19C /* Library */,
+				069DC60D24A1FC7A0012B19C /* SundeedUIBuilder */,
 				069DC62424A1FC7E0012B19C /* SundeedUITests */,
 				069DC60C24A1FC7A0012B19C /* Products */,
 			);
@@ -70,13 +77,13 @@
 		069DC60C24A1FC7A0012B19C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				069DC60B24A1FC7A0012B19C /* SundeedUI.app */,
-				069DC62124A1FC7E0012B19C /* SundeedUITests.xctest */,
+				069DC60B24A1FC7A0012B19C /* SundeedUIBuilder.app */,
+				069DC62124A1FC7E0012B19C /* SundeedUIBuilderTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		069DC60D24A1FC7A0012B19C /* SundeedUI */ = {
+		069DC60D24A1FC7A0012B19C /* SundeedUIBuilder */ = {
 			isa = PBXGroup;
 			children = (
 				069DC60E24A1FC7A0012B19C /* AppDelegate.swift */,
@@ -87,7 +94,7 @@
 				069DC61924A1FC7D0012B19C /* LaunchScreen.storyboard */,
 				069DC61C24A1FC7D0012B19C /* Info.plist */,
 			);
-			path = SundeedUI;
+			path = SundeedUIBuilder;
 			sourceTree = "<group>";
 		};
 		069DC62424A1FC7E0012B19C /* SundeedUITests */ = {
@@ -99,12 +106,22 @@
 			path = SundeedUITests;
 			sourceTree = "<group>";
 		};
+		069DC63024A1FC8C0012B19C /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				069DC63724A245BA0012B19C /* SundeedUIBuilder + General.swift */,
+				069DC63924A246290012B19C /* SundeedUIBuilder + Horizontal.swift */,
+				069DC63B24A246470012B19C /* SundeedUIBuilder + Vertical.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		069DC60A24A1FC7A0012B19C /* SundeedUI */ = {
+		069DC60A24A1FC7A0012B19C /* SundeedUIBuilder */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 069DC62A24A1FC7E0012B19C /* Build configuration list for PBXNativeTarget "SundeedUI" */;
+			buildConfigurationList = 069DC62A24A1FC7E0012B19C /* Build configuration list for PBXNativeTarget "SundeedUIBuilder" */;
 			buildPhases = (
 				069DC60724A1FC7A0012B19C /* Sources */,
 				069DC60824A1FC7A0012B19C /* Frameworks */,
@@ -114,14 +131,14 @@
 			);
 			dependencies = (
 			);
-			name = SundeedUI;
+			name = SundeedUIBuilder;
 			productName = SundeedUI;
-			productReference = 069DC60B24A1FC7A0012B19C /* SundeedUI.app */;
+			productReference = 069DC60B24A1FC7A0012B19C /* SundeedUIBuilder.app */;
 			productType = "com.apple.product-type.application";
 		};
-		069DC62024A1FC7E0012B19C /* SundeedUITests */ = {
+		069DC62024A1FC7E0012B19C /* SundeedUIBuilderTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 069DC62D24A1FC7E0012B19C /* Build configuration list for PBXNativeTarget "SundeedUITests" */;
+			buildConfigurationList = 069DC62D24A1FC7E0012B19C /* Build configuration list for PBXNativeTarget "SundeedUIBuilderTests" */;
 			buildPhases = (
 				069DC61D24A1FC7E0012B19C /* Sources */,
 				069DC61E24A1FC7E0012B19C /* Frameworks */,
@@ -132,9 +149,9 @@
 			dependencies = (
 				069DC62324A1FC7E0012B19C /* PBXTargetDependency */,
 			);
-			name = SundeedUITests;
+			name = SundeedUIBuilderTests;
 			productName = SundeedUITests;
-			productReference = 069DC62124A1FC7E0012B19C /* SundeedUITests.xctest */;
+			productReference = 069DC62124A1FC7E0012B19C /* SundeedUIBuilderTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -156,7 +173,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 069DC60624A1FC7A0012B19C /* Build configuration list for PBXProject "SundeedUI" */;
+			buildConfigurationList = 069DC60624A1FC7A0012B19C /* Build configuration list for PBXProject "SundeedUIBuilder" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -169,8 +186,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				069DC60A24A1FC7A0012B19C /* SundeedUI */,
-				069DC62024A1FC7E0012B19C /* SundeedUITests */,
+				069DC60A24A1FC7A0012B19C /* SundeedUIBuilder */,
+				069DC62024A1FC7E0012B19C /* SundeedUIBuilderTests */,
 			);
 		};
 /* End PBXProject section */
@@ -200,8 +217,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				069DC63C24A246470012B19C /* SundeedUIBuilder + Vertical.swift in Sources */,
+				069DC63A24A246290012B19C /* SundeedUIBuilder + Horizontal.swift in Sources */,
 				069DC61324A1FC7A0012B19C /* ViewController.swift in Sources */,
 				069DC60F24A1FC7A0012B19C /* AppDelegate.swift in Sources */,
+				069DC63824A245BA0012B19C /* SundeedUIBuilder + General.swift in Sources */,
 				069DC61124A1FC7A0012B19C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,7 +239,7 @@
 /* Begin PBXTargetDependency section */
 		069DC62324A1FC7E0012B19C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 069DC60A24A1FC7A0012B19C /* SundeedUI */;
+			target = 069DC60A24A1FC7A0012B19C /* SundeedUIBuilder */;
 			targetProxy = 069DC62224A1FC7E0012B19C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -364,7 +384,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K897Z868JW;
-				INFOPLIST_FILE = SundeedUI/Info.plist;
+				INFOPLIST_FILE = SundeedUIBuilder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -382,7 +402,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K897Z868JW;
-				INFOPLIST_FILE = SundeedUI/Info.plist;
+				INFOPLIST_FILE = SundeedUIBuilder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -412,7 +432,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SundeedUI.app/SundeedUI";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SundeedUIBuilder.app/SundeedUIBuilder";
 			};
 			name = Debug;
 		};
@@ -434,14 +454,14 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SundeedUI.app/SundeedUI";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SundeedUIBuilder.app/SundeedUIBuilder";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		069DC60624A1FC7A0012B19C /* Build configuration list for PBXProject "SundeedUI" */ = {
+		069DC60624A1FC7A0012B19C /* Build configuration list for PBXProject "SundeedUIBuilder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				069DC62824A1FC7E0012B19C /* Debug */,
@@ -450,7 +470,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		069DC62A24A1FC7E0012B19C /* Build configuration list for PBXNativeTarget "SundeedUI" */ = {
+		069DC62A24A1FC7E0012B19C /* Build configuration list for PBXNativeTarget "SundeedUIBuilder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				069DC62B24A1FC7E0012B19C /* Debug */,
@@ -459,7 +479,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		069DC62D24A1FC7E0012B19C /* Build configuration list for PBXNativeTarget "SundeedUITests" */ = {
+		069DC62D24A1FC7E0012B19C /* Build configuration list for PBXNativeTarget "SundeedUIBuilderTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				069DC62E24A1FC7E0012B19C /* Debug */,
